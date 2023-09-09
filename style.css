@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@400;500;600&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&family=Roboto:wght@300;700&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.contanier {
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(32, 26, 26), rgb(85, 0, 74));
+}
+.todo {
+  padding: 40px 30px 70px;
+  max-width: 540px;
+  width: 100%;
+  margin-top: 4%;
+  margin-left: 33%;
+  border-radius: 10px;
+  background-color: #1d0232;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgb(0, 0, 0);
+  color: rgb(128, 27, 223);
+}
+.todo.h2 {
+  color: rgb(128, 27, 223);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo h2 img {
+  width: 70px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #383838;
+  margin-top: 10px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+  padding: 10px;
+ color:rgb(137, 8, 243) ;
+ font-size:medium ;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: rgb(137, 8, 243);
+  padding: 16px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: "  ";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  text-decoration: line-through;
+  
+}
+ul li.checked::before{
+background-image: url(check.png);
+}
+ul li .buttonDELETE{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+   
+}
+ul li .delete{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li .delete:hover{
+    background: linear-gradient(rgb(250, 171, 240), rgb(250, 171, 240));
+}
